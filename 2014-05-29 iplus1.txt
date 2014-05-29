@@ -8,3 +8,19 @@ title: iplus1
 
 
 I figured out how I wanted to code all the stuff while I was laying in bed trying to sleep, and of course now I don`t remember what it was.
+
+iplus1_collection_t main_db;
+iplus1_collection_t anki_deck;
+
+/* add sentences to both */
+
+iplus1_list_t new_sen = iplus1_collection_diff(main_db, anki_deck);
+
+
+for(i = new_sen; i != NULL; i = i->next) {
+	/*  */
+}
+
+
+
+Another idea is a callback:
