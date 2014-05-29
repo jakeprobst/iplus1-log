@@ -44,4 +44,4 @@ iplus1_collection_diff(main_db, anki_deck, &do_magic);
 
 that way it can stop after X results without having to parse everything
 
-
+Also I need to make a tag for jld for code so it ignores markup
