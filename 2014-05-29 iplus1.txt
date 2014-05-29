@@ -3,3 +3,4 @@ date: 2014-05-29
 pos: 0
 title: iplus1
 
+* get stemming working in english parser
