@@ -3,3 +3,5 @@ date: 2014-05-27
 pos: 0
 title: iplus1
 
+* bare stuff started
+* got makefile to compile everything (cause fuck autotools that shit makes me cry)
