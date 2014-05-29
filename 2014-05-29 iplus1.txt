@@ -9,6 +9,15 @@ title: iplus1
 
 I figured out how I wanted to code all the stuff while I was laying in bed trying to sleep, and of course now I don`t remember what it was.
 
+==explanation==
+libiplus1 loads the tatoeba database into an iplus1_collection_t
+iplus1d puts the user's sentences into an iplus1_collection_t
+(iplus1c reads the .anki and sends the data to iplus1d)
+
+iplus1_collection_diff
+
+
+==code==
 iplus1_collection_t main_db;
 iplus1_collection_t anki_deck;
 
@@ -36,4 +45,3 @@ iplus1_collection_diff(main_db, anki_deck, &do_magic);
 that way it can stop after X results without having to parse everything
 
 
-*iplus1_collection_diff
