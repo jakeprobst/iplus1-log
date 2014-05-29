@@ -4,3 +4,4 @@ pos: 0
 title: iplus1
 
 * get stemming working in english parser
+* get sentence+collections working
