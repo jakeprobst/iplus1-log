@@ -18,7 +18,7 @@ iplus1_list_t new_sen = iplus1_collection_diff(main_db, anki_deck);
 
 
 for(i = new_sen; i != NULL; i = i->next) {
-	/*  */
+	/* do magic */
 }
 
 
