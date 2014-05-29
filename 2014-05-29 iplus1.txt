@@ -7,4 +7,4 @@ title: iplus1
 * get sentence+collections working
 
 
-I figured out how I wanted to lay out all the stuff while I was laying in bed trying to sleep, and of course now I don`t remember what it was.
+I figured out how I wanted to code all the stuff while I was laying in bed trying to sleep, and of course now I don`t remember what it was.
