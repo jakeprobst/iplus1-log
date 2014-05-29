@@ -16,6 +16,7 @@ iplus1d puts the user's sentences into an iplus1_collection_t
 
 iplus1_collection_diff will go through the collection and find all the sentences that contain unknown words and return them
 
+possible optimization: have a list of all words, where the words keep a list of sentences that use them
 
 ==code==
 iplus1_collection_t main_db;
