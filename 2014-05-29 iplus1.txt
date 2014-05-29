@@ -14,7 +14,7 @@ libiplus1 loads the tatoeba database into an iplus1_collection_t
 iplus1d puts the user's sentences into an iplus1_collection_t
 (iplus1c reads the .anki and sends the data to iplus1d)
 
-iplus1_collection_diff
+iplus1_collection_diff will go through the collection and find all the sentences that contain unknown words and return them
 
 
 ==code==
