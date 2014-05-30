@@ -3,3 +3,6 @@ date: 2014-05-30
 pos: 1
 title: iplus1
 
+* get sentence+collections working
+* put in a spanish stemmer (probably just a copypaste of the english one)
+* sentence linking
