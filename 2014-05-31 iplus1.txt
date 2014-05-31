@@ -5,3 +5,4 @@ title: iplus1
 
 * keep a list of individual words that link to sentences that contain them
 * add the rest of the languages snowball supports
+* add punctuation stripping to parser
