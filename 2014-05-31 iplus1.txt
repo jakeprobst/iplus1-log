@@ -3,3 +3,4 @@ date: 2014-05-31
 pos: 0
 title: iplus1
 
+* keep a list of individual words that link to sentences that contain them
