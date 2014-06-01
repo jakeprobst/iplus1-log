@@ -8,4 +8,4 @@ title: iplus1
 
 
 All my shit got derailed yesterday when I tried to find something to filter out the proper nouns in sentences. All the named entity recognition stuff seems to either be in python or java.
-Might just compile a list of proper nouns and have it check against that
+Might just compile a list of proper nouns and have it check against that. Like, have a separate script that goes through the db and pulls out all the nouns.
