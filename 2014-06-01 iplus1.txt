@@ -3,3 +3,9 @@ date: 2014-06-01
 pos: 0
 title: iplus1
 
+* try and figure a way to filter out nouns.
+
+
+
+All my shit got derailed yesterday when I tried to find something to filter out the proper nouns in sentences. All the named entity recognition stuff seems to either be in python or java.
+Might just compile a list of proper nouns and have it check against that
