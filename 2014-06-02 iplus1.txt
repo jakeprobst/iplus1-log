@@ -3,3 +3,4 @@ date: 2014-06-02
 pos: 0
 title: iplus1
 
+* add rest of the snowball supported languages
