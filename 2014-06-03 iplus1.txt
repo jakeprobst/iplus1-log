@@ -5,4 +5,8 @@ title: iplus1
 
 ok so I added a bunch of languages to libiplus1, and it turns out iplus1d takes up a lot of memory. like, over 1gb.
 
+In test runs, loading two languages took about 40s, while loading the 13 takes about two minutes
 
+
+Depending on the hardware, it might be better to just have iplus1c load the two languages on demand and parse them.
+requires further testing (and finding out hardware specs)
