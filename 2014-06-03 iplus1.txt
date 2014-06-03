@@ -3,3 +3,6 @@ date: 2014-06-03
 pos: 0
 title: iplus1
 
+ok so I added a bunch of languages to libiplus1, and it turns out iplus1d takes up a lot of memory. like, over 1gb.
+
+
