@@ -3,7 +3,7 @@ date: 2014-06-04
 pos: 0
 title: iplus1
 
-ok new approach: moving from tons of reallocs to linked lists really sped up the initial parsing (like, twice as fast).
+ok new approach: moving from tons of reallocs to linked lists really sped up the initial parsing (like, twice as fast (while also taking up even more memory, I did not think it would take up so much when I came up with this plan)).
 so I`m gonna try and have iplus1c do all the work.
 I`ll split sentences.csv into a file per language for quick loading.
 since sentences.csv updates once per week, I could optimize this even more and just pre-parse the sentences.
