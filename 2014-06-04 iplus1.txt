@@ -12,3 +12,20 @@ since sentences.csv updates once per week, I could optimize this even more and j
 iplus1c -n eng -t jpn -i collection.anki
 -n is the native language, -t is target language, -i is input anki deck
 later there will be a -o flag to specify output file, but for now just write to stdout.
+
+
+
+Notes on performance:
+
+all languages + realloc + print all sentences with 'voic':
+	1.1gb memory
+	2:40 to load
+all languages + linked list + print all sentences with 'voic':
+	1.3gb memory
+	1:10 to load
+two languages + linked list (eng/deu)
+	560mb memory
+	:20 to load
+
+
+processor: amd 965x4 (3.4ghz), currently only using one core (possible optimization later)
