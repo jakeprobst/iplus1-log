@@ -16,7 +16,6 @@ later there will be a -o flag to specify output file, but for now just write to 
 
 
 Notes on performance:
-
 all languages + realloc + print all sentences with 'voic':
 	1.1gb memory
 	2:40 to load
@@ -26,6 +25,5 @@ all languages + linked list + print all sentences with 'voic':
 two languages + linked list (eng/deu)
 	560mb memory
 	:20 to load
-
 
 processor: amd 965x4 (3.4ghz), currently only using one core (possible optimization later)
