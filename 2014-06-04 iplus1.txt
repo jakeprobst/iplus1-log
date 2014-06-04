@@ -3,3 +3,12 @@ date: 2014-06-04
 pos: 0
 title: iplus1
 
+ok new approach: moving from tons of reallocs to linked lists really sped up the initial parsing (like, twice as fast).
+so I`m gonna try and have iplus1c do all the work.
+I`ll split sentences.csv into a file per language for quick loading.
+since sentences.csv updates once per week, I could optimize this even more and just pre-parse the sentences.
+
+
+iplus1c -n eng -t jpn -i collection.anki
+-n is the native language, -t is target language, -i is input anki deck
+later there will be a -o flag to specify output file, but for now just write to stdout.
