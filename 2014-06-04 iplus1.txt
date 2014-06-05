@@ -27,3 +27,6 @@ two languages + linked list (eng/deu)
 	:20 to load
 
 processor: amd 965x4 (3.4ghz), currently only using one core (possible optimization later)
+
+
+WIth that much memory usage to just load two, it does seem a better option to load them all.
