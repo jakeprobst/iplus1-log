@@ -3,3 +3,8 @@ date: 2014-06-05
 pos: 0
 title: iplus1
 
+idea for a way to reduce memory:
+load/parse anki deck, then iterate over the database to find sentences with one new item.
+only keep the sentences that fit
+load links to find the ids of the ones we want
+load the target language's db to find the linked sentences
