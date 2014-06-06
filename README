@@ -1,1 +1,3 @@
 iplus1 logging occurs here
+
+using jld to write entries, and sparkleshare to automatically sync to git
