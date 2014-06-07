@@ -5,3 +5,5 @@ title: iplus1
 
 ok so the c mecab api does not give null terminated strings....but only for this one thing (node->surface).
 what the fuck
+
+that sentence is poorly worded this mecab thing is fucking with my mind why it is happening like that who designed this what thefuck
