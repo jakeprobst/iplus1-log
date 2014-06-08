@@ -19,3 +19,6 @@ it takes under 5 seconds and ~80mb of ram to parse my anki deck, check all sente
 I guess the iplus1d code is now obsolete and I should probably trash it.
 
 now to figure out .apkg formats.
+
+usage:
+./iplus1c -n eng -t jpn -i ~/Anki/jake/collection.anki2
