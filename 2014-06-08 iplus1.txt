@@ -15,3 +15,7 @@ iplus1c currently outputs something like:
 
 
 it takes under 5 seconds and ~80mb of ram to parse my anki deck, check all sentences for new words, and print them.
+
+I guess the iplus1d code is now obsolete and I should probably trash it.
+
+now to figure out .apkg formats I guess
