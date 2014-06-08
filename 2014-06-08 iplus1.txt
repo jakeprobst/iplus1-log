@@ -3,3 +3,15 @@ date: 2014-06-08
 pos: 0
 title: iplus1
 
+I found a really quick way to parse everything:
+
+preparefiles.py does a bit more work than it used to. it takes about 30s to run (and will only need to be ran when sentences.csv updates).
+it separates all the languages into their own files, and now puts the translation of a sentence next to it:
+"102048	jpn	彼は長身の人であった。	eng:He was a tall man.	pol:Był wysokim człowiekiem."
+so no more searching around in links to find the id we want then searching through the sentence list again.
+
+iplus1c currently outputs something like:
+"'彼は長身の人であった。' -> 'He was a tall man.': ['長身']"
+
+
+it takes under 5 seconds and ~80mb of ram to parse my anki deck, check all sentences for new words, and print them.
