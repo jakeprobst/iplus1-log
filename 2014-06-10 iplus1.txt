@@ -3,3 +3,6 @@ date: 2014-06-10
 pos: 0
 title: iplus1
 
+okayherestheplan
+gonna do that extending python with c thing for doing it on the website
+seems like it`d be better to do than call an external process to do everything
