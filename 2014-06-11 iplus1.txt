@@ -8,7 +8,6 @@ possible python api:
 
 import iplus1
 
-ipl = iplus1.iplus1()
 native_lang = 'eng'
 target_lang = 'jpn'
 
