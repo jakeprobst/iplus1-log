@@ -3,3 +3,37 @@ date: 2014-06-11
 pos: 0
 title: iplus1
 
+possible python api:
+
+
+import iplus1
+
+ipl = iplus1.iplus1()
+native_lang = 'eng'
+target_lang = 'jpn'
+
+anki_deck = iplus1.read_anki_deck('./collection.anki2')
+anki_sens = []
+anki_words = {}
+for card in anki_deck:
+	sen = iplus1.sentence(card.split('\x1f')[0], target_lang) # \x1f is how anki deliminates specific fields, the first is the card face
+	anki_sens.append(sen)
+	for w in sen.get_words():
+		anki_words[w].append(sen)
+
+
+results = []
+for s database.get_all_of_lang(target_lang):
+	r = iplus1.result()
+	sen = iplus1.sentence(s.text, target_lang)
+	for w in sen.get_words():
+		if not anki_words.has_key(w):
+			r.new_words.append(w)
+	if len(r) > 0
+		r.original = s.text
+		r.translated = database.get_other_lang(s.id, native_lang)
+		results.append(r)
+
+
+
+
