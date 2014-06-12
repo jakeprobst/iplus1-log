@@ -3,3 +3,58 @@ date: 2014-06-12
 pos: 0
 title: iplus1
 
+ok iplus1d is back, redoing iplus1c to be a sort of testclient for how the server would interact
+going to be using redis since lool0 insists on it.
+
+basic protocol (to iplus1d):
+ADD <nid> <lang> <sentence>
+LINK <native lang> <nid> <target lang> <tid>
+UNLINK <nid> <tid>
+UPDATESTR <nid> <sentence>
+
+redis setup:
+
+on ADD/UPDATESTR:
+SET <nid> <sentence>
+SET <nid>-tokens <token 1>:<token 2>:<token 3>
+SET <nid>-<target lang> <tid 1>:<tid 2>
+
+
+on LINK
+SET <nid>-<trans lang code> <tid 1>:<tid 2>
+
+HSET <target-lang>-<native-lang> <redis id> <native id>:<translated id>
+
+#SET <target lang>-<native lang>-<redis id>-translations <tid 1>:<tid 2>:<tid 3>
+#SET <target lang>-<native lang>-<redis id>-tokens <token 1>:<token 2>:<token 3>
+
+For user input/getting data:
+USERSTART <native lang> <target lang>
+USERSENTENCE <sentence>
+USEREND
+
+the client will start a new connection per user.
+USERSENTENCE will be what is read out of a user's anki deck
+USEREND will tell the server that it is done sending sentences and that it should parse the data, and send back the results
+
+
+words = [<all words parsed from USERSENTENCEs>]
+results = []
+
+list = HGETALL(<target lang>-<native lang>)
+for l in list:
+	nid, tid = l
+	if HGET(tid-<native lang>):
+		for w in GET(tid-tokens)
+			if w not in words:
+				results.append([nid, tid])
+
+
+
+
+
+
+
+
+
+[oh shit I just realized I forgot to put this text entry widget in a scroll box....hahaha oops havn`t written out this much yet]
