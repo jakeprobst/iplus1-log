@@ -54,7 +54,4 @@ for l in list:
 
 
 
-
-
-
 [oh shit I just realized I forgot to put this text entry widget in a scroll box....hahaha oops havn`t written out this much yet]
