@@ -49,3 +49,20 @@ for l in list:
 			if w not in words:
 				results.append([nid, tid])
 
+------------------------------------------------------------
+Ok new plan sortof: Have things done like the old iplus1d, except instead of keeping the strings in memory I just keep them in redis?
+like a sentence struct will hold the id for the string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
