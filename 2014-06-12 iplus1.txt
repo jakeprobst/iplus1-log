@@ -49,5 +49,3 @@ for l in list:
 			if w not in words:
 				results.append([nid, tid])
 
-
-[oh shit I just realized I forgot to put this text entry widget in a scroll box....hahaha oops havn`t written out this much yet]
