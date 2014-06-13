@@ -52,7 +52,7 @@ for l in list:
 ------------------------------------------------------------
 Ok new plan sortof: Have things done like the old iplus1d, except instead of keeping the strings in memory I just keep them in redis?
 like a sentence struct will hold the id for the string. It wont be as memory efficient as possible, but lool0 seems to have some misconceptions about my memory usage anyway.
-
+this will kinda make most of the code in libiplus1 irrelevant or really locked down to this one specific usecase.
 
 .
 
