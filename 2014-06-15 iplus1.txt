@@ -11,3 +11,5 @@ redis memory usage: ~270
 
 HSET <lang> <id> <tokenlist>
 mem usage: 215mb
+
+though that second test had stuff to remove stopwords
