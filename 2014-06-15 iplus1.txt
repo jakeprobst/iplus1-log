@@ -3,3 +3,11 @@ date: 2014-06-15
 pos: 0
 title: iplus1
 
+some benchmarks (these take a while to set up...):
+
+for all tokens in a sentence:
+LPUSH <id> <token>
+redis memory usage: ~270
+
+HSET <lang> <id> <tokenlist>
+mem usage: 215mb
