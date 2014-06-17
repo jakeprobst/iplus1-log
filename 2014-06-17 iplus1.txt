@@ -20,4 +20,4 @@ also makes it easier to send data as a pair will just need to be sent once (curr
 
 
 and for protocol:
-LNK\t<lang code>\t<id>\t<lang code>\t<id>
+LINK\t<lang code>\t<id>\t<lang code>\t<id>
