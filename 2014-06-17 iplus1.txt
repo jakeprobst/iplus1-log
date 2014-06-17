@@ -1,0 +1,11 @@
+id: 66
+date: 2014-06-17
+pos: 0
+title: iplus1
+
+ok so redis format idea two:
+
+HSET <lang> <id> <tokens>
+tokens being <token 1>,<token 2>,<token 3>
+
+HSET <lang>-<tlang> <id> <tid>
