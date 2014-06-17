@@ -8,4 +8,17 @@ ok so redis format idea two:
 HSET <lang> <id> <tokens>
 tokens being <token 1>,<token 2>,<token 3>
 
-HSET <lang>-<tlang> <id> <tid>
+HSET <tlang>-<nlang> <id> <tid>
+
+ok so ankidata is all loaded up tokenized for words and now we ask redis for ids of all sentences of the target lang that have native lang translations
+iterate over list of sentences -> get tokens based on id -> check tokens against list of words from anki deck -> find sentences with one new -> save tid -> return list of tids to server for it to look up and send to user.
+
+
+
+
+
+
+
+as an optimization, <tlang>-<nlang> and <nlang>-<tlang> would both exist and be the same thing mostly.
+sort it alphabetically so that the pair will have one list total and make a note which side is needed to look up the translation we need.
+also makes it easier to send data as a pair will just need to be sent once (current links.csv has all links both ways).
