@@ -11,6 +11,5 @@ memory usage is at 75mb
 I am pretty much dendi right now.
 
 so right now links are:
-
 SADD <lang1>-<lang2> <(id1 | id2 << 32)>
 where lang1 and lang2 are sorted alphabetically so I dont have to have eng-jpn and jpn-eng that replicate the exact same data.
