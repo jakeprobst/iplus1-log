@@ -21,3 +21,22 @@ also makes it easier to send data as a pair will just need to be sent once (curr
 
 and for protocol:
 LINK\t<lang code>\t<id>\t<lang code>\t<id>
+
+
+
+tried some memory optimization (from http://redis.io/topics/memory-optimization):
+hash-max-ziplist-entries 500000
+hash-max-ziplist-value 1024
+
+there are a handful of sentences that go over 512, otherwise I would use that as the -value.
+might just filter them out since they are unlikely to show up when i+1ing anyway.
+
+memory usage: 90mb
+time to process: 166minutes
+
+it is only a onetime init, so that time is acceptable, I guess.
+the memory usage is quite nice though.
+
+Optimizations for the links can be made, will work on that next.
+
+note on filtering out sentences longer than 512: no effect
