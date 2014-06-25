@@ -3,3 +3,19 @@ date: 2014-06-25
 pos: 0
 title: iplus1
 
+so, iplu1d can accept anki data and send back data.
+
+now I have to work on the user-facing bit.
+the server doesn't seem equipped to handle having anki collections uploaded and parsed, so need to find an alternative.
+idea 1: parse the file locally through javascript
+	there is an sqlite javascript library, but it is quite large and probably slow on older systems.
+	might make a proof of concept and try on my shitty netbook and see how well it works.
+	send to server through an api which sends the data to iplus1d
+idea 2: parse locally pt.2 
+	have the user export to a text file and parse that through javascript
+idea 3: export to apkg and upload that
+	anki apkgs are quite small and possibly might not be much of a load on the server
+idea 4: anki plugin
+	this one feels like sort of a cop-out to me. makes it feel like less of a tatoeba thing? I dunno.
+	would be significantly easier to do though
+	will probably have this whether a browser interface exists or not
