@@ -19,3 +19,7 @@ idea 4: anki plugin
 	this one feels like sort of a cop-out to me. makes it feel like less of a tatoeba thing? I dunno.
 	would be significantly easier to do though
 	will probably have this whether a browser interface exists or not
+
+ok tested sql.js on my shit netbook thing
+it takes like....no time to do the simple query I need. this might be an option.
+the 1.5mb of js is kinda annoying though.
