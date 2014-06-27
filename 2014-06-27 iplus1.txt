@@ -3,3 +3,43 @@ date: 2014-06-27
 pos: 0
 title: iplus1
 
+need to sort of formalize the interactions between client/tatoeba/iplus1d
+
+on tatoeba there will be a page to select an .anki/.apkg to use.
+the browser will use sql.js to read the file and extract the relevant information (fronts of cards).
+the client will POST the extracted sentences (either in direct iplus1d protocol or just newline delim`d sentences) to the server
+the server will send these sentences to iplus1d which will do magic and send returns the ids of sentences
+the server looks up those ids and sends the information back to the client.
+
+
+iplus1d protocol (assume spaces as \t for ease of reading):
+SEN <id> <lang> <sentence>
+LINK <lang1> <id1> <lang2> <id2>
+ANKIBEGIN <transaction id> <native language> <target language>
+ANKICARD <transaction id> <sentence>
+ANKIEND <transaction id>
+NEWSEN <transaction id> <native id> <translated id> <new word (stemmed)>
+
+TODO: UNLINK
+
+
+notes:
+LINK: pairs only have to be submitted once, an eng->jpn will reverse to jpn->eng
+ANKI*: transaction id is to separate multiple connections at once, use their username or key related to the user
+ANKIBEGIN: lool0 wanted me to add another thing to this command, but I forget what
+ANKIEND: on this command, iplus1d will reply to the server with X NEWSENs, where X is specified by whatever, set to 100 for now.
+NEWSEN: transaction id might not be needed here, depending how stuff works.
+
+
+
+
+idea: can actually probably do a lot of this work right in tatoeba in python....just with some c extensions...
+hmmmmmm
+now if only lool0 would commit his code ever so I could at least know what I need to work with to get this stuff working.
+user uploads sentence list, it gets parsed right there, sends new words back.
+this actually seems like a cleaner way than an external daemon now that the storage of things was pushed off to redis
+
+so everything I wrote out is useless now cool whatever it might still be relevant someday.
+this is why I have no idea how to say if I`m on/behind/ahead of schedule, I feel like I`ve been wandering in circles with this for the longest time.
+I feel on schedule, I mean the core algorithms and stuff is there, I just keep wandering for the proper way to deploy it?
+ohwellwhatever I like this new idea better so I`ll go with it for a bit see how it works out.
