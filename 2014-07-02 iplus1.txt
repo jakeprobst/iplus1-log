@@ -7,3 +7,5 @@ I have the client size deck parsing done, though it was rather easy.
 now I need to read up on ajax and POSTing data to the server and how to handle it server side.
 I have a small django project locally to try and make it work,
 I`ll need to write up some python bindings first though
+
+actually I`m just going to be really lazy and use ctypes since I managed to figure it out.
