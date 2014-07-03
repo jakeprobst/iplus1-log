@@ -22,5 +22,4 @@ title: iplus1
 >>>
 
 well this sure saves me a lot of time figuring out how to extend python properly.
-
-
+I could even go back and use python's nltk at this point since I seem to keep making code I have written obsolete.
