@@ -3,3 +3,24 @@ date: 2014-07-03
 pos: 0
 title: iplus1
 
+>>> import ctypes
+>>> iplus1 = ctypes.CDLL("libiplus1.so")
+>>> iplus1.iplus1_init()
+0
+>>> eng = iplus1.iplus1_get_lang("eng")
+>>> iplus1.iplus1_lang_parse.restype = ctypes.POINTER(ctypes.c_char_p * 5)
+>>> r = iplus1.iplus1_lang_parse(eng, "I am a very long run on sentence").contents
+>>> r[0]
+'veri'
+>>> r[1]
+'long'
+>>> r[2]
+'run'
+>>> r[3]
+'sentenc'
+>>> r[4]
+>>>
+
+well this sure saves me a lot of time figuring out how to extend python properly.
+
+
