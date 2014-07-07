@@ -3,4 +3,8 @@ date: 2014-07-06
 pos: 0
 title: iplus1
 
-wrote up 
+finally got lool0 to give me some code to work with for the server side of things.
+It should all work, I can't really test as I dont have a full database on my side of things...
+
+also I was having some issues with ctypes so I wrote a small python extention. turns out I only really need one function out of it.
+it takes about 5s to run on my computer, so I may need to move some more stuff into there to speed it up...
