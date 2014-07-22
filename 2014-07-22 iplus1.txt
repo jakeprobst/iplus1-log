@@ -3,3 +3,8 @@ date: 2014-07-22
 pos: 0
 title: iplus1
 
+ok TI4 is over backtowork
+
+got the browser to POST the data to the server and have it send appropriate data back.
+except, I don't have the database, so I just send back filler text for now.
+I`ll probably shove the text db into redis to be able to have a test server running for people to try out. that`ll take like a day to fully insert though...
