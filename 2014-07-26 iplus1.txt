@@ -10,3 +10,5 @@ I`m just going to stay at exporting to .csv. after looking further into .apkg st
 The code for the pytoeba side is also complete, so this is ready once that is.
 
 The web interface stuff will probably need to be redone once the actual site is up, but thats a bit out of my control right now so I guess thats what my filler-ish page is for.
+
+I do need to clean out a lot of the code since most of it ended up being unused.
