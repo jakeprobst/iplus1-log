@@ -3,3 +3,10 @@ date: 2014-07-26
 pos: 0
 title: iplus1
 
+well, everything works now. I guess I`m done?
+
+I`m just going to stay at exporting to .csv. after looking further into .apkg stuff, it doesnt really seem to offer anything useful.
+
+The code for the pytoeba side is also complete, so this is ready once that is.
+
+The web interface stuff will probably need to be redone once the actual site is up, but thats a bit out of my control right now so I guess thats what my filler-ish page is for.
