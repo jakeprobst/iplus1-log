@@ -4,3 +4,5 @@ pos: 0
 title: iplus1
 
 moved some python stuff into c, went from ~5s to go from sending data to result to less than a second.
+
+also deleted a lot of the unneeded code
