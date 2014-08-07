@@ -7,3 +7,9 @@ well, finally wrote some documentation for my stuff, as well as a full example i
 
 I really should hide the redis stuff so the user doesnt have to deal with it, and have the user specify what backend protcol to use.
 not sure if that`d work with how pytoeba is set up though.
+
+But yeah, it works, fully documented, example code for clients once tatoeba is running off the new software.
+
+
+
+On an unrelated note, I finally sold out and bought a cellphone. And in preparation I needed to make a few fixes to ankidroid: https://github.com/jakeprobst/Anki-Android
