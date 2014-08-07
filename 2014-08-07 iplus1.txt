@@ -12,5 +12,5 @@ But yeah, it works, fully documented, example code for clients once tatoeba is r
 
 
 
-On an unrelated note, I finally sold out and bought a cellphone. And in preparation I needed to make a few fixes to ankidroid: https://github.com/jakeprobst/Anki-Android
+On an unrelated note, I finally sold out and bought a cellphone. And so I needed to make a few fixes to ankidroid: https://github.com/jakeprobst/Anki-Android
 I hadn`t touched java since highschool so it was prettycool that I got all the functionality I needed done in one day.
