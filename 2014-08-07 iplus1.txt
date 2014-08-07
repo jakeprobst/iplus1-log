@@ -4,3 +4,6 @@ pos: 0
 title: iplus1
 
 well, finally wrote some documentation for my stuff, as well as a full example in c.
+
+I really should hide the redis stuff so the user doesnt have to deal with it, and have the user specify what backend protcol to use.
+not sure if that`d work with how pytoeba is set up though.
